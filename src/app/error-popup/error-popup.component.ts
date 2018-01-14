@@ -28,7 +28,7 @@ export class ErrorPopupComponent implements OnInit, OnDestroy {
     this.onClosed.emit(true);
   }
 
-  outerClose(): void {
+  outerClose($event): void {
     this.hidePopup();
   }
 
