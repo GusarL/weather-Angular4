@@ -1,0 +1,20 @@
+@mixin flex-vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-align {
+  @include flex-vertical-align;
+  justify-content: center;
+}
+
+@mixin text-font-color {
+  color: $colorLightBlack;
+  font-family: $fontFamilySansSerif;
+}
+
+@mixin text-font-color-bold {
+  color: $colorLightBlack;
+  font-family: $fontFamilySansSerif;
+  font-weight: bold;
+}

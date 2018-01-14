@@ -1,0 +1,98 @@
+@import '../../styles/_partials.scss';
+@import '../../styles/variables.scss';
+
+.date {
+  height: 50px;
+  @include flex-vertical-align;
+  @include text-font-color;
+  font-size: 20px;
+  margin-left: 1%;
+}
+
+.city, .temperature, .weather {
+  @include flex-center-align;
+  @include text-font-color;
+}
+
+.city {
+   font-size: 26px;
+}
+
+.temperature {
+  font-size: 50px;
+}
+
+.weather {
+  font-size: 23px;
+}
+
+.weather-icon {
+  justify-content: flex-end;
+  margin-right: 1%;
+  .clouds {
+    background: url(../../assets/icn-clouds.svg) no-repeat 0 0;
+    height: 28px;
+    width: 40px;
+  }
+  .clear {
+    background: url(../../assets/icn-clear-sky.svg) no-repeat 0 0;
+    height: 36px;
+    width: 36px;
+  }
+  .snow {
+    background: url(../../assets/icn-snow.svg) no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+  }
+  .rain {
+    background: url(../../assets/icn-rain.svg) no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+  }
+  .drizzle {
+    background: url(../../assets/icn-drizzle.svg) no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+  }
+  .thunderstorm {
+    background: url(../../assets/icn-thunderstorm.svg) no-repeat 0 0;
+    height: 40px;
+    width: 40px;
+  }
+  .atmosphere {
+    background: url(../../assets/icn-atmosphere.svg) no-repeat 0 0;
+    height: 30px;
+    width: 40px;
+  }
+}
+
+.weather-summary {
+  @include flex-center-align;
+  background-color: $colorLightGray;
+  height: 40px;
+  border: 2px solid $colorLightGrayBorder;
+  margin-top: 18px;
+}
+
+.title-value-wraper {
+  @include flex-center-align;
+  margin-right: 3%;
+}
+
+.weather-title {
+  @include text-font-color-bold;
+  font-size: 18px;
+  margin-right: 7%;
+  white-space: nowrap;
+}
+
+.weather-value, .unit-measurement {
+  @include text-font-color;
+  font-size: 18px;
+}
+
+.weather-value {
+  margin-right: 2%;
+}
+
+

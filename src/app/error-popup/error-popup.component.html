@@ -1,0 +1,8 @@
+<div class="modal" [hidden]="!show">
+  <div class="modal-content" (clickOutside)="outerClose($event)">
+    <span class="close" (click)="hidePopup()">&times;</span>
+    <p>There is no any forecast for entered place.
+      Please enter correct city name or zipcode.
+    </p>
+  </div>
+</div>

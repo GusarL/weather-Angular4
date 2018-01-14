@@ -1,0 +1,42 @@
+@import '../../styles/_partials.scss';
+@import '../../styles/variables.scss';
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 40vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $colorLightBlack;
+  background-color: $colorBlackOpacity;
+}
+
+.modal-content {
+  background-color: $colorModalContent;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid $colorDarkGray;
+  width: 80%;
+}
+
+.close {
+  color: $colorCloseButton;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: $colorLightBlack;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visible {
+  display: block;
+}
+

@@ -1,0 +1,16 @@
+<div [hidden]="!cityZipcode || fetchCurrent || fetch16">
+  <div class="title">Forecast 16 days</div>
+  <div class="nav">
+    <div *ngFor="let tab of tabs"
+         (click)="selectTab(tab)"
+         [class.active]="tab.active"
+         class="nav-item"
+         [ngClass]="tab.class" >
+      <div class="tab-title">
+        {{tab.name}}
+      </div>
+    </div>
+  </div>
+</div>
+<app-diagram [diagramTitle]='diagramTitle'></app-diagram>
+

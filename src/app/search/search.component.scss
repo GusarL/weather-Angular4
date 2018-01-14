@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+@import '../../styles/_partials.scss';
+
+:host {
+  margin-left: auto;
+  width: 30%;
+  height: 75%;
+}
+
+.form-search {
+  height: 100%;
+}
+
+.seach-field {
+  appearance:none;
+  margin-left: -10%;
+  width: 100%;
+  padding-left: 2%;
+  display: flex;
+  align-self:center;
+  height: 100%;
+  @include text-font-color;
+  font-size: 20px;
+  border: 1px solid $colorLightGrayBorder;
+    &::-webkit-input-placeholder {
+      color: $colorLightGrayText;
+      font-family: $fontFamilySansSerif;
+      padding-left: 5px;
+    }
+    &:focus,
+      :-webkit-autofill,
+      :-webkit-autofill:hover,
+      :-webkit-autofill:focus {
+      outline: none;
+      border: 2px solid $colorDarkGray;
+      background-color: $colorWhiteBacground;
+    }
+}
+
+

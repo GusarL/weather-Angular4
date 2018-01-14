@@ -7,7 +7,7 @@ export interface Weather {
   description: string;
 }
 
-export interface WeatherData {
+export interface ForecastCurrent {
   rh: number;
   pod: string;
   pres: number;
@@ -41,6 +41,3 @@ export interface WeatherData {
   wind_cdir: string;
 }
 
-export interface ForecastCurrent {
-  data: WeatherData[];
-}

@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/_partials.scss';
+
+.header {
+  background-color: $colorLightGray;
+  height: 60px;
+  border: 2px solid $colorLightGrayBorder;
+  @include flex-vertical-align;
+}
+
+.icon {
+  margin-left: 1%;
+}
+
+.title {
+  color: $colorLightBlack;
+  font-family: $fontFamilySansSerif;
+  margin-left: 2%;
+}

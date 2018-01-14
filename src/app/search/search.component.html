@@ -1,0 +1,9 @@
+<form name="search" class="form-search">
+  <input type="text" name="searchCity"
+         class="seach-field"
+         [(ngModel)]="cityZipcode"
+         (keyup.enter)="onSubmit()"
+         #name="ngModel"
+         placeholder="City or zipcode">
+</form>
+

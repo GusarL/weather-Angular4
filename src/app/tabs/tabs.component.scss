@@ -1,0 +1,47 @@
+@import '../../styles/_partials.scss';
+@import '../../styles/variables.scss';
+
+.title {
+  margin-top: 20px;
+  height: 40px;
+  @include flex-vertical-align;
+  @include text-font-color;
+  font-size: 22px;
+  margin-left: 1%;
+}
+
+.nav {
+  margin-left: 1%;
+  display: flex;
+}
+
+.nav-item {
+  border: 2px solid $colorLightGrayBorder;
+  &.active {
+    background-color: $colorLightGray;
+    border-bottom: none;
+    font-weight: bold;
+  }
+}
+
+.wind {
+  min-width: 5%;
+}
+
+.temperature {
+  min-width: 11.5%;
+  border-left: none;
+}
+
+.presure, .humidity {
+  min-width: 8%;
+  border-left: none;
+}
+
+.tab-title {
+  padding: 0 10% 0 10%;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+

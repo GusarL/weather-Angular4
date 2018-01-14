@@ -1,0 +1,31 @@
+<div [hidden]="fetchingData">
+  <div class="date">{{currentDate | date:'EEEE, d MMMM'}}</div>
+  <div class="city">{{forecastCurrent.city_name}}, {{forecastCurrent.country_code}}</div>
+  <div class="temperature">{{forecastCurrent.temp}}&#176; C</div>
+  <div class="weather">
+    <div class="weather-icon">
+      <div [ngClass]="weatherIcon"></div>
+    </div>
+    {{forecastCurrent.weather.description}}
+  </div>
+  <div class="weather-summary">
+    <div class="title-value-wraper">
+      <span class="weather-title">Pressure:</span>
+      <span class="weather-value">{{forecastCurrent.pres}}</span>
+    </div>
+    <div class="title-value-wraper">
+      <span class="weather-title">Humidity:</span>
+      <span class="weather-value">{{forecastCurrent.rh}}</span>
+    </div>
+    <div class="title-value-wraper">
+      <span class="weather-title">Wind Speed:</span>
+      <span class="weather-value">{{forecastCurrent.wind_spd}}</span>
+      <span class="unit-measurement">m/c</span>
+    </div>
+    <div class="title-value-wraper">
+      <span class="weather-title">Clouds:</span>
+      <span class="weather-value">{{forecastCurrent.clouds}}</span>
+      <span class="unit-measurement">%</span>
+    </div>
+  </div>
+</div>
