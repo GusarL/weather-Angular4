@@ -25,7 +25,7 @@ export class DiagramComponent implements OnInit, OnChanges, OnDestroy {
   @Input('diagramTitle') diagramTitle;
   @ViewChild('chart') private chartContainer: ElementRef;
 
-  private cityZipcode: string | number;
+  public cityZipcode: string | number;
   public fetchData: boolean;
   public hide: boolean;
 
