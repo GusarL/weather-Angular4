@@ -34,7 +34,7 @@ export class LoaderComponent implements OnInit, OnDestroy {
     });
   }
 
-  onClosed (): void {
+  onClosed ($event): void {
     this.hide = true;
   }
 
