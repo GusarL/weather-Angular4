@@ -11,7 +11,6 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { TabsComponent } from './tabs/tabs.component';
 import { DiagramComponent } from './diagram/diagram.component';
 
-import { AppConfig } from './services/config-app';
 import { WeatherApiService } from './services/weather-api.service';
 import { PassDataService } from './services/pass-data.service';
 import { ZipcodeService } from './services/zipcode.service';
@@ -38,8 +37,7 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     HttpClientModule,
     HttpModule
   ],
-  providers: [ { provide: AppConfig, useValue: AppConfig },
-               WeatherApiService,
+  providers: [ WeatherApiService,
                PassDataService,
                ZipcodeService],
   bootstrap: [AppComponent]

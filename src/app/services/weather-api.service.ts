@@ -1,10 +1,6 @@
-import {Inject, Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-
-import { IAppConfig } from '../model/app-config.interface';
-import { AppConfig } from './config-app';
-import { Forecast16 } from '../model/forecast16.interface';
 
 import 'rxjs/add/operator/retry';
 import 'rxjs/add/operator/map';
@@ -18,12 +14,9 @@ export class WeatherApiService {
   private forecast16DaysUrl = 'https://api.weatherbit.io/v2.0/forecast/daily';
   private forecastCurrentUrl = 'https://api.weatherbit.io/v2.0/current';
 
-  private keyAPI: string;
+  private keyAPI = '6334e6b1872047df91fa98196f2bf055';
 
-  constructor(@Inject(AppConfig) private config: IAppConfig,
-              private http: HttpClient) {
-    this.keyAPI = config.weatherbitAPIKey;
-  }
+  constructor(private http: HttpClient) { }
 
   getForecast16DaysByCity (city): Observable<any> {
     return this.http.get(this.forecast16DaysUrl + '?city=' + city + '&key=' + this.keyAPI)
