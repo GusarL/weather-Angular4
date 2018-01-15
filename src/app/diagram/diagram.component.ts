@@ -76,6 +76,7 @@ export class DiagramComponent implements OnInit, OnChanges, OnDestroy {
           } else {
             this.passData.changeOpenPopup(true);
             this.hide = true;
+            this.fetchData  = true;
           }
         });
 
@@ -89,6 +90,7 @@ export class DiagramComponent implements OnInit, OnChanges, OnDestroy {
           } else {
             this.passData.changeOpenPopup(true);
             this.hide = true;
+            this.fetchData  = true;
           }
         });
     }
@@ -103,6 +105,7 @@ export class DiagramComponent implements OnInit, OnChanges, OnDestroy {
     this.updateChart();
     this.passData.changeLoadind16(false);
     this.hide = false;
+    this.fetchData  = false;
   }
 
   onFethcedCurrent(): void {

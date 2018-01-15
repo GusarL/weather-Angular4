@@ -19,10 +19,14 @@
   fill: $colorDarkGray;
 }
 
-.bar.positive {
-  fill: $colorBarPositive;
-}
+//.bar.positive {
+//  fill: $colorBarPositive;
+//}
+//
+//.bar.negative {
+//  fill: $colorBarNegative;
+//}
 
-.bar.negative {
-  fill: $colorBarNegative;
+.invisible {
+  visibility: hidden;
 }
