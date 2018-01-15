@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>storm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="storm">
+            <path d="M8,28 C3.581722,28 0,24.418278 0,20 C0,16.6338298 2.07901655,13.7532399 5.02305234,12.5722276 C5.00778321,12.3835011 5,12.1926595 5,12 C5,8.13400675 8.13400675,5 12,5 C13.5113459,5 14.9108232,5.47896691 16.0549207,6.29338979 C17.8187912,2.57290747 21.6089282,0 26,0 C32.0751322,0 37,4.92486775 37,11 C37,11.8709905 36.8987698,12.7183374 36.7074331,13.5309171 C38.7031044,14.9856252 40,17.3413595 40,20 C40,24.418278 36.418278,28 32,28 L8,28 Z" id="Combined-Shape-Copy-9" fill="#5B85AA"></path>
+            <polygon id="Path" fill="#E8A260" points="15.2851562 28 19.0290527 28 15.6704102 32.6443685 20.0079346 32.6443685 14.0013428 40 13.0177002 40 16.0204468 34.5926107 11 34.5926107"></polygon>
+        </g>
+    </g>
+</svg>
